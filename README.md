@@ -1,0 +1,1 @@
+If you ever met me in person, you must have noticed I have a QRCode tattoed on my wrist. The QRCode is encoding the link to this repository html page (index.html) hosted by GitHub at pedropinh0.github.io.
