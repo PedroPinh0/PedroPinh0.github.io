@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirecting...</title>
   <style>
-    /* Basic CSS to improve appearance on mobile devices */
+    /* Styling for a more polished, modern look */
     body {
       display: flex;
       justify-content: center;
@@ -14,34 +14,60 @@
       text-align: center;
       min-height: 100vh;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      color: #fff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     }
 
     a {
       display: inline-block;
       margin-top: 1rem;
-      padding: 0.5rem 1rem;
+      padding: 0.75rem 1.5rem;
       font-size: 1rem;
       text-decoration: none;
       color: #fff;
-      background-color: #007BFF;
-      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 25px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
     }
 
     a:hover {
-      background-color: #0056b3;
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+    }
+
+    .loader {
+      border: 5px solid rgba(255, 255, 255, 0.2);
+      border-top: 5px solid #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-top: 1rem;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
   <script>
@@ -51,12 +77,13 @@
     // Redirect the user to the URL after a short delay (optional)
     setTimeout(() => {
       window.location.href = redirectUrl;
-    }, 1500); // Redirect after 3 seconds
+    }, 5000); // Redirect after 5 seconds
   </script>
 </head>
 <body>
-  <h1>Redirecting...</h1>
-  <p>You are being redirected to the desired page.</p>
+  <h1>Hang Tight! We're Redirecting You...</h1>
+  <p>You'll be taken to the desired page shortly.</p>
+  <div class="loader"></div>
   <p>If you are not redirected automatically, <a id="redirect-link" href="#">click here</a>.</p>
   <script>
     // Update the fallback link
