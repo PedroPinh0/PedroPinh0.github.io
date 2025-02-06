@@ -3,25 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V-Card</title>
+    <title>Pedro V. Pinho - Nanophotonics Researcher</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100 p-4">
-    <div class="max-w-xs bg-white rounded-2xl shadow-lg overflow-hidden w-full">
-        <div class="flex justify-center mt-4">
-            <img class="w-24 h-24 object-cover rounded-full border-4 border-white shadow-lg" src="https://github.com/PedroPinh0/PedroPinh0.github.io/blob/main/foto_Inventta.jpg?raw=true" alt="Profile image">
-        </div>
-        <div class="p-6 text-center">
-            <h2 class="text-xl font-bold text-gray-900">Pedro V. Pinho</h2>
-            <p class="text-gray-600">PhD Candidate | Nanophotonics</p>
-            <p class="text-gray-700 mt-2">📞 +31 6 44262910</p>
-            <div class="mt-4">
-                <p class="text-sm text-gray-700">I'm always eager to take on new challenges and explore innovative applications of physics in emerging technologies.</p>
+<body class="flex items-center justify-center min-h-screen bg-gray-50 p-4 font-['Inter']">
+    <div class="max-w-md w-full bg-white rounded-xl shadow-xl overflow-hidden transition-transform duration-300 hover:shadow-2xl hover:-translate-y-2">
+        <!-- Header Section -->
+        <div class="bg-gray-600 p-6 text-center">
+            <div class="relative inline-block">
+                <img class="w-32 h-32 object-cover rounded-full border-4 border-white shadow-lg" 
+                     src="https://github.com/PedroPinh0/PedroPinh0.github.io/blob/main/foto_Inventta.jpg?raw=true" 
+                     alt="Pedro V. Pinho">
+                <div class="absolute bottom-0 right-0 bg-white rounded-full p-1 shadow-sm">
+                    <div class="bg-gray-600 rounded-full p-2">
+                        <i class="fas fa-microscope text-white text-sm"></i>
+                    </div>
+                </div>
             </div>
-            <div class="mt-4 flex justify-center space-x-4">
-                <a href="https://www.linkedin.com/in/pinho-pedro/" class="text-blue-500 hover:text-blue-700">LinkedIn</a>
-                <a href="https://github.com/PedroPinh0" class="text-gray-500 hover:text-gray-700">GitHub</a>
-                <a href="https://scholar.google.at/citations?user=9r4mJrcAAAAJ&hl=de" class="text-green-500 hover:text-green-700">Google Scholar</a>
+        </div>
+
+        <!-- Body Content -->
+        <div class="p-8">
+            <div class="text-center mb-6">
+                <h1 class="text-2xl font-bold text-gray-800 mb-1">Pedro V. Pinho</h1>
+                <p class="text-gray-600 font-semibold mb-4">PhD Candidate | Nanophotonics Researcher</p>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col space-y-2 text-gray-600 text-sm">
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span>+31 6 44262910</span>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Delft, Netherlands</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-200 my-6"></div>
+
+            <!-- About Section -->
+            <div class="mb-6">
+                <h3 class="text-sm font-semibold text-gray-700 mb-3">About Me</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Passionate nanophotonics researcher pursuing cutting-edge solutions in light-matter interactions. 
+                    Committed to bridging theoretical physics with practical applications in quantum technologies.
+                </p>
+            </div>
+
+            <!-- Skills -->
+            <div class="mb-6">
+                <h3 class="text-sm font-semibold text-gray-700 mb-3">Expertise</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-50 text-gray-700 text-xs rounded-full">Quantum and Nonlinear optics</span>
+                    <span class="px-3 py-1 bg-gray-50 text-gray-700 text-xs rounded-full">FDTD/Frequency Domain Simulations</span>
+                    <span class="px-3 py-1 bg-gray-50 text-gray-700 text-xs rounded-full">Cleanroom nanofabrication</span>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center space-x-4 mt-8">
+                <a href="https://www.linkedin.com/in/pinho-pedro/" 
+                   class="text-gray-600 hover:text-gray-800 transition-colors duration-200">
+                    <i class="fab fa-linkedin-in text-lg"></i>
+                </a>
+                <a href="https://github.com/PedroPinh0" 
+                   class="text-gray-600 hover:text-gray-800 transition-colors duration-200">
+                    <i class="fab fa-github text-lg"></i>
+                </a>
+                <a href="https://scholar.google.at/citations?user=9r4mJrcAAAAJ&hl=de" 
+                   class="text-amber-600 hover:text-amber-800 transition-colors duration-200">
+                    <i class="fas fa-graduation-cap text-lg"></i>
+                </a>
             </div>
         </div>
     </div>
